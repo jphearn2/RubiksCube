@@ -14,9 +14,11 @@ namespace RubiksSolver
         [STAThread]
         static void Main()
         {
+            string[, ,]cube = new string[6, 3, 3];
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainMenu(cube));
         }
     }
 }

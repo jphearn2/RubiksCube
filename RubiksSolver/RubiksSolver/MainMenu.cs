@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace RubiksSolver
 {
-    public partial class Form1 : Form
+    public partial class MainMenu : Form
     {
-        public Form1()
+        public MainMenu(string[,,] cube)
         {
             InitializeComponent();
+        }
+
+        private void start_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
