@@ -20,9 +20,10 @@ namespace RubiksSolver
             LoadCube();
         }
 
-        private void start_Click(object sender, EventArgs e)
+        private void start_Click_1(object sender, EventArgs e)
         {
-
+            //MessageBox.Show("message");
+            LoadCube();
         }
 
         private void LoadCube() // loads in the cube by taking in the text from inputs
@@ -88,5 +89,70 @@ namespace RubiksSolver
             cube[5, 2, 1] = in521.Text;
             cube[5, 2, 2] = in522.Text;
         }
+
+        private void UpdateCube()
+        {
+            in000.Text = cube[0, 0, 0];
+            in000.Text = cube[0, 0, 1];
+            in000.Text = cube[0, 0, 2];
+            in000.Text = cube[0, 1, 0];
+            in000.Text = cube[0, 1, 1];
+            in000.Text = cube[0, 1, 2];
+            in000.Text = cube[0, 2, 0];
+            in000.Text = cube[0, 2, 1];
+            in000.Text = cube[0, 2, 2];
+
+            in100.Text = cube[1, 0, 0];
+            in100.Text = cube[1, 0, 1];
+            in100.Text = cube[1, 0, 2];
+            in100.Text = cube[1, 1, 0];
+            in100.Text = cube[1, 1, 1];
+            in100.Text = cube[1, 1, 2];
+            in100.Text = cube[1, 2, 0];
+            in100.Text = cube[1, 2, 1];
+            in100.Text = cube[1, 2, 2];
+        
+            in200.Text = cube[2, 0, 0];
+            in200.Text = cube[2, 0, 1];
+            in200.Text = cube[2, 0, 2];
+            in200.Text = cube[2, 1, 0];
+            in200.Text = cube[2, 1, 1];
+            in200.Text = cube[2, 1, 2];
+            in200.Text = cube[2, 2, 0];
+            in200.Text = cube[2, 2, 1];
+            in200.Text = cube[2, 2, 2];
+
+            in300.Text = cube[3, 0, 0];
+            in300.Text = cube[3, 0, 1];
+            in300.Text = cube[3, 0, 2];
+            in300.Text = cube[3, 1, 0];
+            in300.Text = cube[3, 1, 1];
+            in300.Text = cube[3, 1, 2];
+            in300.Text = cube[3, 2, 0];
+            in300.Text = cube[3, 2, 1];
+            in300.Text = cube[3, 2, 2];
+        
+            in400.Text = cube[4, 0, 0];
+            in400.Text = cube[4, 0, 1];
+            in400.Text = cube[4, 0, 2];
+            in400.Text = cube[4, 1, 0];
+            in400.Text = cube[4, 1, 1];
+            in400.Text = cube[4, 1, 2];
+            in400.Text = cube[4, 2, 0];
+            in400.Text = cube[4, 2, 1];
+            in400.Text = cube[4, 2, 2];
+        
+            in500.Text = cube[5, 0, 0];
+            in500.Text = cube[5, 0, 1];
+            in500.Text = cube[5, 0, 2];
+            in500.Text = cube[5, 1, 0];
+            in500.Text = cube[5, 1, 1];
+            in500.Text = cube[5, 1, 2];
+            in500.Text = cube[5, 2, 0];
+            in500.Text = cube[5, 2, 1];
+            in500.Text = cube[5, 2, 2];
+        }
+
+        
     }
 }

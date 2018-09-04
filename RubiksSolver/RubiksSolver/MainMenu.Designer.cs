@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.start = new System.Windows.Forms.Button();
             this.in000 = new System.Windows.Forms.TextBox();
             this.in001 = new System.Windows.Forms.TextBox();
             this.in002 = new System.Windows.Forms.TextBox();
@@ -85,14 +85,15 @@
             this.in500 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // start
             // 
-            this.button1.Location = new System.Drawing.Point(634, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.start.Location = new System.Drawing.Point(634, 353);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(75, 23);
+            this.start.TabIndex = 0;
+            this.start.Text = "Start";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click_1);
             // 
             // in000
             // 
@@ -693,7 +694,7 @@
             this.Controls.Add(this.in002);
             this.Controls.Add(this.in001);
             this.Controls.Add(this.in000);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.start);
             this.Name = "MainMenu";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -703,7 +704,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button start;
         private System.Windows.Forms.TextBox in000;
         private System.Windows.Forms.TextBox in001;
         private System.Windows.Forms.TextBox in002;
