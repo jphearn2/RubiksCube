@@ -83,6 +83,7 @@
             this.in502 = new System.Windows.Forms.TextBox();
             this.in501 = new System.Windows.Forms.TextBox();
             this.in500 = new System.Windows.Forms.TextBox();
+            this.right = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // start
@@ -635,11 +636,22 @@
             this.in500.TabIndex = 46;
             this.in500.Text = "O";
             // 
+            // right
+            // 
+            this.right.Location = new System.Drawing.Point(634, 324);
+            this.right.Name = "right";
+            this.right.Size = new System.Drawing.Size(75, 23);
+            this.right.TabIndex = 55;
+            this.right.Text = "Right";
+            this.right.UseVisualStyleBackColor = true;
+            this.right.Click += new System.EventHandler(this.right_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.right);
             this.Controls.Add(this.in522);
             this.Controls.Add(this.in521);
             this.Controls.Add(this.in520);
@@ -759,6 +771,7 @@
         private System.Windows.Forms.TextBox in502;
         private System.Windows.Forms.TextBox in501;
         private System.Windows.Forms.TextBox in500;
+        private System.Windows.Forms.Button right;
     }
 }
 
